@@ -4,15 +4,12 @@
 
 ![image](figs/title.jpeg)
 
-### [Project Description](doc/Proj1_desc.md)
-This is the first and only *individual* (as opposed to *team*) this semester. 
-
 Term: Fall 2023
 
-+ Projec title: Lorem ipsum dolor sit amet
-+ This project is conducted by [your name]
++ Projec title: Different People Have Different Sources of Happiness
++ This project is conducted by Peng Jiang
 
-+ Project summary: [a short summary] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++ Project summary: Different people derive their happiness from different sources. By investigating these sources, we can fundamentally understand the key to enhancing happiness. We are fortunate to have access to the HappyDB database, which contains a wealth of workers' descriptions of their sources of happiness. By examining this dataset and identifying the diverse sources of happiness, we can assist factories in devising targeted incentive plans to boost happiness and, consequently, productivity. In this notebook, we employ R notebook for data mining and ultimately display the various sources of happiness for different people via word clouds.
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
@@ -25,4 +22,13 @@ proj/
 └── output/
 ```
 
-Please see each subfolder for a README file.
+lib:
+    wordcloud.R: This file defines two helper functions, namely generate_wordcloud and draw_image. These are used to generate word clouds and load images to display on the screen, respectively.
+data: This dir contains the raw datasets. The original data for this file comes from: 
+        https://github.com/megagonlabs/HappyDB
+doc:
+    assignment.rmd: This .rmd file is the core of this data analysis project. All R code and    notebooks are defined within this .rmd file.
+    assignment.html: The HTML file is generated from the assignment.rmd file through RStudio's knit function.
+figs: This file stores the word cloud in PNG format. Due to version issues with wordcloud2, 
+    more than one word cloud widget cannot be rendered in the knit HTML file. Therefore, webshot is used to screenshot it into PNG format first, and then the PNG files are extracted from this folder and rendered on the web page.
+output: The output file stores some temporary files in this project, mainly the word cloud's htmlwidget.
