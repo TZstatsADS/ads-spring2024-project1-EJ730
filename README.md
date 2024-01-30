@@ -23,12 +23,12 @@ proj/
 ```
 
 lib:
-    wordcloud.R: This file defines two helper functions, namely generate_wordcloud and draw_image. These are used to generate word clouds and load images to display on the screen, respectively.
-data: This dir contains the raw datasets. The original data for this file comes from: 
-        https://github.com/megagonlabs/HappyDB
-doc:
-    assignment.rmd: This .rmd file is the core of this data analysis project. All R code and    notebooks are defined within this .rmd file.
-    assignment.html: The HTML file is generated from the assignment.rmd file through RStudio's knit function.
-figs: This file stores the word cloud in PNG format. Due to version issues with wordcloud2, 
-    more than one word cloud widget cannot be rendered in the knit HTML file. Therefore, webshot is used to screenshot it into PNG format first, and then the PNG files are extracted from this folder and rendered on the web page.
-output: The output file stores some temporary files in this project, mainly the word cloud's htmlwidget.
+    wordcloud.R: This file defines two helper functions, namely generate_wordcloud and draw_image. These are used to generate word clouds and load images to display on the screen, respectively.  
+data: This dir contains the raw datasets. The original data for this file comes from:   
+        https://github.com/megagonlabs/HappyDB  
+doc:  
+    assignment.rmd: This .rmd file is the core of this data analysis project. All R code and    notebooks are defined within this .rmd file.  
+    assignment.html: The HTML file is generated from the assignment.rmd file through RStudio's knit function.  
+figs: This file stores the word cloud in PNG format. Due to version issues with wordcloud2,   
+    more than one word cloud widget cannot be rendered in the knit HTML file. Therefore, webshot is used to screenshot it into PNG format first, and then the PNG files are extracted from this folder and rendered on the web page.  
+output: The output file stores some temporary files in this project, mainly the word cloud's htmlwidget.  
